@@ -2,7 +2,8 @@
 {
   /* <div id='title'>
     <div id='child'>
-        <h1 id="title"></h1>
+        <h1 id="first">First Child</h1>
+        <h1 id="second">Second child</h1>
     </div>
 </div> */
 }
@@ -15,13 +16,22 @@ const parentContainer = React.createElement(
     {
       id: 'child',
     },
-    React.createElement(
-      'h1',
-      {
-        id: 'title',
-      },
-      'Hello from React! '
-    )
+    [
+      React.createElement(
+        'h1',
+        {
+          id: 'first',
+        },
+        'First'
+      ),
+      React.createElement(
+        'h1',
+        {
+          id: 'second',
+        },
+        'Second'
+      ),
+    ]
   ) // Children
 );
 

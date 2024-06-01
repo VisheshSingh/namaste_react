@@ -24,5 +24,7 @@ const parentContainer = React.createElement(
     )
   ) // Children
 );
+
+console.log(parentContainer); // this is a React object that the browser understands
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(parentContainer);

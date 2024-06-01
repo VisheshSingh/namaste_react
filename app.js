@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 // CREATE THE FOLLOWING HTML WITH REACT
 {
   /* <div id='title'>
